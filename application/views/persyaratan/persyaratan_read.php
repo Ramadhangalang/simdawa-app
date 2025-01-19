@@ -15,6 +15,9 @@
                 </div>
             </div>
         </div>
+        <?php
+        $this->load->view('template/notifikasi');
+        ?>
         <div class="row">
             <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
                 <div class="card">
@@ -32,7 +35,8 @@
                                 </tr>
                             </thead>
                             <tbody>
-                                <?php $no = 1; foreach ($persyaratan as $p) { ?>
+                                <?php $no = 1;
+                                foreach ($persyaratan as $p) { ?>
                                     <tr>
                                         <td><?= $no++ ?></td>
                                         <td><?= $p->nama_persyaratan ?></td>
